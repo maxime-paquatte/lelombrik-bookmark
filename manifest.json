@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Lelombrik Bookmark",
+    "description": "Cette extension permet de marquer un fichier afin de reprendre la navigation sur celui-ci lors de la prochaine visite.",
+    "version": "1.1",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "permissions": [
+        "http://lelombrik.net/"
+    ],
+    "web_accessible_resources": [ "clock.png" ],
+    "content_scripts": [
+        {
+            "matches": [ "http://lelombrik.net/*" ],
+            "css": [ "llBookmark.css" ],
+            "js": [ "llBookmark.js" ]
+        }
+    ]
+}

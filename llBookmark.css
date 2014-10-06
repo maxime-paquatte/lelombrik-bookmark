@@ -3,6 +3,20 @@
     height: 34px;
     position: absolute;
     bottom: 10px;
-    right: 95px;
-    background-repeat: no-repeat; 
+    right: 10px;
+    background-repeat: no-repeat;
+    
+    -webkit-transition: transform 0.5s linear;
+    -moz-transition: transform 0.5s linear;
+    -o-transition: transform 0.5s linear;
+    transition: transform 0.5s linear;
+
+}
+
+.bookmark.success {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
 }

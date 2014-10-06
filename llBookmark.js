@@ -16,7 +16,7 @@
 
         var button = document.createElement("a");
         button.className = "bookmark";
-        button.setAttribute("href", host + "1#bookmark");
+        button.setAttribute("href", host + "/1#bookmark");
         button.setAttribute("title", "Cliquez pour enregistrer le marque page / Glissez ce lien dans vos favoris pour revenir à ce fichier");
         button.setAttribute("style", 'background: url("' + chrome.extension.getURL("clock.png") + '") no-repeat;');
 
